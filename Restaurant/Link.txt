@@ -1,0 +1,11 @@
+https://drive.google.com/drive/folders/1QZ9oy1RBor_J62CVQJzfCCClKlBXkFkL?usp=sharing
+
+https://developer.mozilla.org/es/docs/Web/CSS/Layout_mode
+
+https://developer.mozilla.org/es/docs/Learn/CSS/CSS_layout/Flexbox
+
+https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout
+
+https://cybmeta.com/em-y-rem
+
+https://developer.mozilla.org/es/docs/Web/CSS/Media_Queries/Using_media_queries
