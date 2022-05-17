@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>Techies Buenos Aires</title>
+  </head>
+  <body data-spy="scroll" data-target="#navbar" data-offset="57">
+    <!-- Header -->
+    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="data:image/png;base64,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" alt="ITBA logo">
+          Techies Buenos Aires
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#main">La conferencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#speakers">Las oradores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#place-time">El lugar y la fecha</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#conviertete-en-orador">Conviértete en orador</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-itba" href="#" data-toggle="modal" data-target="#modalCompra">Comprar tickets</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- /Header -->
+
+    <!-- Main -->
+    <main id="main">
+      <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="https://th.bing.com/th/id/OIP.zSwF1J6NqsbuMzpis-tkqwHaE7?pid=ImgDet&rs=1" alt="Hawaii 1">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://www.hawaiiecoliving.com/wp-content/uploads/2014/07/IMG_3370.jpg" alt="Hawaii 2">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://th.bing.com/th/id/R.c8052f8a24cbddb4a03d882b9852b150?rik=NMyiOrb%2bO%2fDZtg&riu=http%3a%2f%2fevasion-online.com%2fimagearticle%2f2015%2f07%2fvoyage-hawaii-visite-07.jpg&ehk=S70W2bNZryNp9q2IxSZB9hLpzAjH8ViqWQSrgieegtY%3d&risl=&pid=ImgRaw&r=0" alt="Hawaii 3">
+          </div>
+          <div class="overlay">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-md-6 offset-md-6 text-center text-md-right">
+                  <h1>El mejor foro techie de Latinoamérica</h1>
+                  <p class="d-none d-md-block">
+                    Las grandes mentes techs llegan a Buenos Aires! Un evento que no podrás perderte, 
+                    donde el conocimiento y experiencia
+                    de los expertos que están creando el futuro de internet va estar muy cerca de ti.
+                    Te esperamos!
+                  </p>
+                  <a href="#" class="btn btn-outline-light" data-toggle="modal">Quiero ser orador</a>
+                  <button type="button" class="btn btn-platzi" data-toggle="modal" data-target="#modalCompra">Comprar tickets</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- /Main -->
+
+    <!-- Speakers -->
+    <section id="speakers" class="mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center text-uppercase">
+            <small>Conoce a los</small>
+            <h2>Oradores</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="https://media-exp1.licdn.com/dms/image/C4E03AQE45EMEVAh69Q/profile-displayphoto-shrink_800_800/0/1563373029271?e=1658361600&v=beta&t=FIoWOvDplJyHjU_WXEA7WaEMCXTqRIhKoEShxyI7ndk" alt="Foto">
+              <div class="card-body">
+                <div class="badges">
+                  <span class="badge badge-warning">Data</span>
+                  <span class="badge badge-info">Business</span>
+                </div>
+                <h5 class="card-title">Jorge Rodríguez</h5>
+                <p class="card-text">Vivamus quam mi, egestas eu metus id, mollis suscipit ipsum. In vel mollis mauris. Nunc id sem a lacus tincidunt pretium in in urna. Nam mi nisi, tincidunt ac tincidunt id, fermentum at metus.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="https://www.cronista.com/files/image/343/343959/610027d728285.jpg" alt="Foto">
+              <div class="card-body">
+                <div class="badges">
+                  <span class="badge badge-warning">Software</span>
+                  <span class="badge badge-info">Cloud</span>
+                </div>
+                <h5 class="card-title">Bill Gates</h5>
+                <p class="card-text">Vivamus quam mi, egestas eu metus id, mollis suscipit ipsum. In vel mollis mauris. Nunc id sem a lacus tincidunt pretium in in urna. Nam mi nisi, tincidunt ac tincidunt id, fermentum at metus.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="https://www.abc.es/xlsemanal/wp-content/uploads/sites/5/2021/07/jeff-bezos-el-amo-del-mundo.jpg" alt="Foto de Sacha">
+              <div class="card-body">
+                <div class="badges">
+                  <span class="badge badge-secondary">Negocios</span>
+                  <span class="badge badge-danger">Cloud</span>
+                </div>
+                <h5 class="card-title">Jeff Bezos</h5>
+                <p class="card-text">Vivamus quam mi, egestas eu metus id, mollis suscipit ipsum. In vel mollis mauris. Nunc id sem a lacus tincidunt pretium in in urna. Nam mi nisi, tincidunt ac tincidunt id, fermentum at metus.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/8/85/Elon_Musk_Royal_Society_%28crop1%29.jpg" alt="Foto de Sacha">
+              <div class="card-body">
+                <div class="badges">
+                  <span class="badge badge-secondary">Space</span>
+                  <span class="badge badge-danger">Startups</span>
+                </div>
+                <h5 class="card-title">Elon Musk</h5>
+                <p class="card-text">Vivamus quam mi, egestas eu metus id, mollis suscipit ipsum. In vel mollis mauris. Nunc id sem a lacus tincidunt pretium in in urna. Nam mi nisi, tincidunt ac tincidunt id, fermentum at metus.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Speakers -->
+
+    <!-- Lugar y fecha -->
+    <section id="place-time">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-6 pl-0 pr-0">
+            <img src="https://www.gohawaii.com/sites/default/files/styles/image_gallery_bg_xl/public/hero-unit-images/Oahu-Honolulu-Aerial-Hero-2_1.jpg?itok=XX4tTNBw" alt="Honolulu" />
+          </div>
+          <div class="col-12 col-lg-6 pt-4 pb-4">
+            <h2>Honolulu - Octubre 2025</h2>
+            <p>
+              Honolulu o Honolulú​ es la capital y localidad más grande del estado de Hawái, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la isla (aproximadamente 600 km² de superficie).
+            </p>
+            <a class="btn btn-outline-light" href="https://es.wikipedia.org/wiki/Honolulu">Conoce más</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Lugar y fecha -->
+
+    <!-- Conviértete en orador -->
+    <section id="conviertete-en-orador" class="pt-3 pb-3">
+      <div class="container">
+        <div class="row">
+          <div class="col text-uppercase text-center">
+            <small>Conviértete en un</small>
+            <h2>Orador</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            Anótate como orador para dar una <abbr data-toggle="tooltip" title="Charlas de 5 minutos">charla</abbr>.
+            Cuéntanos de qué quieres hablar!
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-12 col-md-6">
+                  <input type="text" class="form-control" placeholder="Nombre">
+                </div>
+                <div class="form-group col-12 col-md-6">
+                  <input type="text" class="form-control" placeholder="Apellido">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col">
+                  <textarea name="text" class="form-control form-control-lg" placeholder="Sobre qué quieres hablar?"></textarea>
+                  <small class="form-text text-muted">
+                    Recuerda incluir un título para tu charla
+                  </small>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <button type="button" class="btn btn-itba btn-block">Enviar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Conviértete en orador -->
+
+    <!-- Footer -->
+    <footer id="footer" class="pb-4 pt-4">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12 col-lg">
+            <a href="#">Preguntas frecuentes</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="#">Contáctanos</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="#">Prensa</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="#">Conferencias</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="#">Términos y condiciones</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="#">Privacidad</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="#">Estudiantes</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /Footer -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalCompra" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Comprar tickets</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-row">
+                <div class="form-group col">
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">@</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="alert alert-warning" role="alert">
+              Recibirás un correo de confirmación si sales sorteado
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-platzi">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Modal -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
